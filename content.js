@@ -57,6 +57,7 @@
     });
 
     shadowRoot.addEventListener('keydown', (e) => {
+      e.stopPropagation(); // prevent keystrokes from reaching host-page shortcut handlers
       if (e.key === 'Tab') {
         e.preventDefault();
         input.focus();
