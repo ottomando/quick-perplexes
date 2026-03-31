@@ -47,6 +47,13 @@
         }
       }
     });
+
+    const backdrop = shadowRoot.getElementById('backdrop');
+    backdrop.addEventListener('click', (e) => {
+      if (e.target === backdrop) {
+        closeOverlay();
+      }
+    });
   }
 
   function openOverlay() {
@@ -77,6 +84,8 @@
       } else {
         openOverlay();
       }
+    } else if (e.key === 'Escape' && isOpen) {
+      closeOverlay();
     }
   }, true);
 })();
