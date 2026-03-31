@@ -2,6 +2,7 @@
   let host = null;
   let shadowRoot = null;
   let isOpen = false;
+  let isCreating = false;
 
   function buildSearchUrl(query) {
     return 'https://www.perplexity.ai/search?q=' + encodeURIComponent(query.trim());
@@ -64,9 +65,12 @@
   }
 
   function openOverlay() {
+    if (isCreating) return;
     isOpen = true;
     if (!host) {
+      isCreating = true;
       createOverlay().then(() => {
+        isCreating = false;
         shadowRoot.getElementById('input').focus();
       });
     } else {
@@ -76,8 +80,10 @@
   }
 
   function closeOverlay() {
+    if (isCreating) return;
     if (host) {
       host.style.display = 'none';
+      shadowRoot.getElementById('input').value = '';
     }
     isOpen = false;
   }
@@ -92,6 +98,8 @@
         openOverlay();
       }
     } else if (e.key === 'Escape' && isOpen) {
+      e.preventDefault();
+      e.stopPropagation();
       closeOverlay();
     }
   }, true);

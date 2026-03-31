@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Quick Perplexes",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Spotlight-style Perplexity search overlay. Press Ctrl+` on any page.",
   "action": {},
   "background": {
