@@ -34,14 +34,13 @@
   }
 
   function openOverlay() {
+    isOpen = true;
     if (!host) {
       createOverlay().then(() => {
-        isOpen = true;
         shadowRoot.getElementById('input').focus();
       });
     } else {
       host.style.display = '';
-      isOpen = true;
       shadowRoot.getElementById('input').focus();
     }
   }
