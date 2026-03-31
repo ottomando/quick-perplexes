@@ -15,11 +15,20 @@
       "js": [
         "content.js"
       ],
-      "css": [],
       "run_at": "document_idle"
     }
   ],
   "permissions": [
     "tabs"
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "overlay.css"
+      ],
+      "matches": [
+        "<all_urls>"
+      ]
+    }
   ]
 }
