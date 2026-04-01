@@ -32,12 +32,12 @@ function buildZip(entries) {
   const localHeaders = [];
   const centralHeaders = [];
   let offset = 0;
+  const dosDate = dosDateTime(new Date()); // captured once for deterministic timestamps
 
   for (const { name, data } of entries) {
     const compressed = zlib.deflateRawSync(data, { level: 6 });
     const crc = crc32(data);
     const nameBytes = Buffer.from(name, 'utf8');
-    const dosDate = dosDateTime(new Date());
 
     // Local file header (30 bytes + name)
     const local = Buffer.alloc(30 + nameBytes.length);

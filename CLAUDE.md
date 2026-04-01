@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What This Is
 
-A Chrome and Firefox Manifest V3 extension that adds a Spotlight-like overlay (triggered by `Ctrl+``) to any webpage, letting users submit queries directly to Perplexity.ai. Zero dependencies, no build step.
+A Chrome and Firefox Manifest V3 extension that adds a Spotlight-like overlay (triggered by `Ctrl+``) to any webpage, letting users submit queries directly to Perplexity.ai. Zero runtime dependencies; run `node build.js` to package for store submission.
 
 ## Development Workflow
 
