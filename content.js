@@ -106,7 +106,8 @@
       if (isOpen) {
         closeOverlay();
       } else {
-        openOverlay();
+        const prefill = window.getSelection().toString().trim();
+        openOverlay(prefill);
       }
     } else if (e.key === 'Escape' && isOpen) {
       e.preventDefault();
