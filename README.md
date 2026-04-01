@@ -15,7 +15,7 @@ Type a query, hit Enter — Perplexity opens in a new tab.
 ## Install
 
 - **Chrome:** [Chrome Web Store](#) *(coming soon)*
-- **Firefox:** [Firefox Add-ons](#) *(coming soon)*
+- **Firefox:** [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/addon/quick-perplexes/)
 
 Or load unpacked for development (see below).
 
