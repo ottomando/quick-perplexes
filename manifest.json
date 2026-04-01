@@ -18,7 +18,10 @@
     }
   },
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "background.js",
+    "scripts": [
+      "background.js"
+    ]
   },
   "content_scripts": [
     {
@@ -34,6 +37,12 @@
   "permissions": [
     "tabs"
   ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "quick-perplexes@otto",
+      "strict_min_version": "121.0"
+    }
+  },
   "web_accessible_resources": [
     {
       "resources": [
