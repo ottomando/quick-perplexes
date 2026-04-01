@@ -90,10 +90,10 @@ kbd {
 }
 
 .btn-secondary {
-  background: #21262d;
-  color: #c9d1d9;
-  border: 1px solid #30363d;
-  font-weight: 500;
+  background: #ff7139;
+  color: #fff;
+  border: none;
+  font-weight: 600;
 }
 
 .btn[disabled] {
