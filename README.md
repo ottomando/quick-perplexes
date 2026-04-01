@@ -17,6 +17,8 @@ Or load unpacked for development (see below).
 2. Type your query and hit `Enter` — Perplexity opens in a new tab
 3. Press `Esc` or click outside to dismiss
 
+**Tip:** Select text on a page before pressing `Ctrl+`` and it will pre-fill the search box.
+
 Clicking the toolbar icon also opens perplexity.ai directly.
 
 ## Development
