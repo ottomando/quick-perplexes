@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quick Perplexes — Instant Perplexity on any webpage</title>
+  <meta name="description" content="Press Ctrl+` on any webpage to instantly search Perplexity. Free browser extension for Chrome and Firefox." />
+  <link rel="icon" href="icon128.png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="page">
+
+  <!-- Hero -->
+  <section class="hero">
+    <img class="hero-icon" src="icon128.png" alt="Quick Perplexes icon" />
+    <h1 class="hero-name">Quick Perplexes</h1>
+    <p class="hero-tagline">Instant Perplexity. Zero context switching.</p>
+    <p class="hero-usage">Press <kbd>Ctrl+`</kbd> on any page &mdash; type &mdash; hit Enter.</p>
+    <div class="btn-row">
+      <!-- TODO: replace with <a href="[Chrome Web Store URL]"> once live -->
+      <button class="btn btn-primary" disabled>Add to Chrome</button>
+      <!-- TODO: replace with <a href="[Firefox Add-ons URL]"> once live -->
+      <button class="btn btn-secondary" disabled>Add to Firefox</button>
+    </div>
+  </section>
+
+  <!-- Demo -->
+  <section class="demo">
+    <p class="section-label">See it in action</p>
+    <div class="demo-wrapper" id="demo-wrapper">
+      <div class="demo-input">
+        <span class="demo-icon">&#128269;</span>
+        <span class="demo-text" id="demo-text"></span><span class="cursor" id="demo-cursor"></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="how">
+    <p class="section-label">How it works</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-emoji">&#9000;&#65039;</div>
+        <div class="step-title">Press Ctrl+`</div>
+        <div class="step-desc">On any webpage</div>
+      </div>
+      <div class="step">
+        <div class="step-emoji">&#9999;&#65039;</div>
+        <div class="step-title">Type your query</div>
+        <div class="step-desc">Hit Enter</div>
+      </div>
+      <div class="step">
+        <div class="step-emoji">&#128270;</div>
+        <div class="step-title">Perplexity opens</div>
+        <div class="step-desc">In a new tab</div>
+      </div>
+    </div>
+    <div class="tip">
+      <span>&#128161;</span>
+      <span><strong>Tip:</strong> Select text on the page first &mdash; it&rsquo;ll pre-fill the search box.</span>
+    </div>
+  </section>
+
+  <!-- Install CTA -->
+  <section class="install">
+    <p class="cta-title">Ready to install?</p>
+    <p class="cta-sub">Free. No account. No tracking.</p>
+    <div class="btn-row">
+      <!-- TODO: replace with <a href="[Chrome Web Store URL]"> once live -->
+      <button class="btn btn-primary" disabled>Add to Chrome</button>
+      <!-- TODO: replace with <a href="[Firefox Add-ons URL]"> once live -->
+      <button class="btn btn-secondary" disabled>Add to Firefox</button>
+    </div>
+  </section>
+
+</div>
+
+<!-- Footer (outside .page so it spans full width at 600px) -->
+<footer>
+  <span>MIT License</span>
+  <a href="https://github.com/MetalOath/quick-perplexes">View source on GitHub &rarr;</a>
+</footer>
+
+<script src="demo.js"></script>
+</body>
+</html>
