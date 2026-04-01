@@ -2,6 +2,8 @@
 
 A Chrome and Firefox extension that summons a Spotlight-like search overlay with `Ctrl+`` on any webpage. Type a query, hit Enter — Perplexity opens in a new tab.
 
+**[https://ottomando.github.io/quick-perplexes/](https://ottomando.github.io/quick-perplexes/)**
+
 ## Install
 
 - **Chrome:** [Chrome Web Store](#) *(coming soon)*
