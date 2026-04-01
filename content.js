@@ -106,7 +106,8 @@
       if (isOpen) {
         closeOverlay();
       } else {
-        const prefill = window.getSelection().toString().trim();
+        const sel = window.getSelection();
+        const prefill = sel ? sel.toString().trim() : '';
         openOverlay(prefill);
       }
     } else if (e.key === 'Escape' && isOpen) {
