@@ -183,6 +183,13 @@
         Perplexity.ai search URL and opens it in a new tab. The overlay closes
         automatically and the input is cleared for the next use.
       </p>
+      <p>
+        You can also use modifier keys to control how results open:
+        <kbd>Ctrl+Enter</kbd> opens in a background tab,
+        <kbd>Shift+Enter</kbd> opens in a new window, and
+        <kbd>Alt+Enter</kbd> opens in a floating popup window anchored to the
+        bottom-right corner of the screen.
+      </p>
 
       <h3>Pre-filling with selected text</h3>
       <p>
@@ -224,7 +231,22 @@
           </tr>
           <tr>
             <td><kbd>Enter</kbd></td>
-            <td>Submit search query</td>
+            <td>Search in new tab</td>
+            <td>Overlay open</td>
+          </tr>
+          <tr>
+            <td><kbd>Ctrl+Enter</kbd></td>
+            <td>Search in background tab</td>
+            <td>Overlay open</td>
+          </tr>
+          <tr>
+            <td><kbd>Shift+Enter</kbd></td>
+            <td>Search in new window</td>
+            <td>Overlay open</td>
+          </tr>
+          <tr>
+            <td><kbd>Alt+Enter</kbd></td>
+            <td>Search in floating popup</td>
             <td>Overlay open</td>
           </tr>
           <tr>
@@ -335,6 +357,16 @@ isOpen = !isOpen;</div>
     <!-- ── Changelog ── -->
     <div class="docs-section" id="changelog">
       <h2><span class="section-icon">📋</span> Version history</h2>
+
+      <div class="changelog-entry">
+        <div class="changelog-header">
+          <span class="changelog-tag">v1.1.0</span>
+          <span class="changelog-date">2026-04-10</span>
+        </div>
+        <div class="changelog-desc">
+          <strong>Shortcut hints &amp; popup search.</strong> The overlay footer now shows keyboard shortcut hints for all search modes. New <kbd>Alt+Enter</kbd> shortcut opens Perplexity in a floating popup window (480&times;700, bottom-right). Input field now scrolls to the caret when typing long queries.
+        </div>
+      </div>
 
       <div class="changelog-entry">
         <div class="changelog-header">
