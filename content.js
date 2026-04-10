@@ -61,7 +61,10 @@
     footer.id = 'footer';
     const hints = document.createElement('span');
     hints.className = 'hints';
-    hints.innerHTML = '<kbd>Ctrl</kbd> background · <kbd>Shift</kbd> window · <kbd>Alt</kbd> popup';
+    const isMac = /Mac/i.test(navigator.platform || navigator.userAgent);
+    const ctrlLabel = isMac ? 'Command' : 'Ctrl';
+    const altLabel = isMac ? 'Option' : 'Alt';
+    hints.innerHTML = `<kbd>${ctrlLabel}</kbd> background · <kbd>Shift</kbd> window · <kbd>${altLabel}</kbd> popup`;
     const primary = document.createElement('span');
     primary.innerHTML = '<kbd>Enter</kbd> search';
     footer.append(hints, primary);
